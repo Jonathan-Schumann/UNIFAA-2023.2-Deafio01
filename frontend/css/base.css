@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap");
+
+:root {
+    --cor-primaria: #F4511E;
+    --cor-secundaria:#FF7043;
+}
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+table.table {
+    box-shadow: 0 0 10px 0 rgb(50 50 50 / 82%);
+}
+
+table.table>thead>tr th {
+    background-color: #eee;
+}
+
+button.btn{
+    min-width: 80px;
+}
+
+
+#loading{
+    display: none;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #476CDA;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #4782da;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+nav.menu-lateral.expandir ul li.item-menu:hover{
+    margin-left: -20px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-top: -20px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;    
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 65px;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 35px;
+    opacity: 1;
+    
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+    margin-left: -20px;
+}
+
+#btn-sair{
+    margin-top: 220px;
+}
+
+div.container.afastar{
+    margin-left: 330px;
+    float: right, 330px;
+    transition: .5s;
+}
