@@ -114,3 +114,11 @@ div.container.afastar{
     float: right, 330px;
     transition: .5s;
 }
+
+.container{
+    background-image: url(Usability\ testing-pana.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
